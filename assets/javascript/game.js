@@ -6,7 +6,6 @@ var cartoons = [
   "sailormoon",
   "gargoyles",
   "recess",
-  "looneytunes"
 ]
 
 
@@ -49,15 +48,12 @@ var scoobydoo;
 
 
 r = document.getElementById("rugrats");
-heya = document.getElementById("heya");
 doug = document.getElementById("doug");
 aaahrm = document.getElementById("aaahrealmonsters");
 rockosml = document.getElementById("rockosmodernlife");
 sailorm = document.getElementById("sailormoon");
 gargoyles = document.getElementById("gargoyles");
 recess = document.getElementById("recess");
-couragetcd = document.getElementById("couragetcd");
-looneyt = document.getElementById("looneyt");
 scoobydoo = document.getElementById("scoobydoo");
 
 document.onkeyup = function (event) {
