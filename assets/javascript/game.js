@@ -1,16 +1,12 @@
 var cartoons = [
   "rugrats",
-  "heyarnold",
-  "Doug",
+  "doug",
   "aaahhrealmonsters",
   "rockosmodernlife",
   "sailormoon",
   "gargoyles",
   "recess",
-  "couragethecowardlydog",
-  "looneytunes",
-  "scoobydoo,"
-
+  "looneytunes"
 ]
 
 
@@ -25,7 +21,7 @@ var guessesLeft = 13;
 
 
 randomW = cartoons[Math.floor(Math.random() * cartoons.length)];
-randomW = cartoons[0]; // TODO: static for testing
+//randomW = cartoons[0]; // TODO: static for testing
 console.log(randomW)
 
 lettersOfWord = randomW.split("");
@@ -85,9 +81,23 @@ document.onkeyup = function (event) {
 }
 
 function reset() {
-  guessesLeft = 13;
+  guessesLeft = 14;
   lettersGuessed = [];
   blankCorrect = [];
+
+  randomW = cartoons[Math.floor(Math.random() * cartoons.length)];
+  blankSpace = lettersOfWord.length;
+console.log('blankSpace', blankSpace);
+
+lettersOfWord = randomW.split("");
+console.log('letters-guessed', lettersOfWord);
+
+blankSpace = lettersOfWord.length;
+console.log('blankSpace', blankSpace);
+
+for (var i = 0; i < blankSpace; i++) {
+  blankCorrect.push("_");
+  }
 }
 
 function checkLetters(letter) {
