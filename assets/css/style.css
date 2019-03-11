@@ -28,6 +28,7 @@ img {
 .background{
     position: relative;
     top: 500;
+    background: url("../images/bb.jpg");
 
 
 }
@@ -46,6 +47,7 @@ img {
     opacity: 0.6;
   filter: alpha(opacity=60);
   font-weight: bold;
+   
 }
 
 
