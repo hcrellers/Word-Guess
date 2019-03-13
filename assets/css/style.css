@@ -12,9 +12,6 @@ h2 {
 }
 
 
-img {
-    margin: 10px;
-}
 
 
 .sidebar {
@@ -26,9 +23,12 @@ img {
 
 
 .background{
-    position: relative;
-    top: 500;
     background: url("../images/bb.jpg");
+    height: 600px;
+    margin-top: -50px;
+   
+
+
 
 
 }
